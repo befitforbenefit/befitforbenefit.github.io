@@ -57,7 +57,10 @@
 <meta name="twitter:site" content="@rexarvind" />
 <meta name="twitter:creator" content="@rexarvind" /> 
 
-</head><body class="d-flex flex-column h-100 bg-light">
+</head><body style="opacity:0" class="d-flex flex-column h-100 bg-light" id="loader">
+
+<script>window.addEventListener("load", ()=>document.body.style.opacity=1)</script>
+
 <!-- header start -->
 <header>
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark py-1 border-bottom shadow">
