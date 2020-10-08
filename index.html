@@ -18,10 +18,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
 <link rel="stylesheet" href="lib/bootstrap.min.css" />
-<link rel="stylesheet" href="main.css" />
-<link rel="stylesheet" href="style.css" />
 
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="main.css"></noscript>
+
+<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="style.css"></noscript>
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"></noscript>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -221,7 +226,7 @@ Be Fit For Benefit
 
 <!-- floating btn start -->
 <div class="position-fixed bottom-0 right-0 m-2">
-<a href="https://api.whatsapp.com/send?phone=918181040977&text=Hello,%20Arvind" class="btn btn-success btn-sm rounded-pill">WhatsApp</a>
+<a href="https://api.whatsapp.com/send?phone=918181040977&text=Hello,%20Arvind" class="btn btn-danger btn-sm rounded-pill">Live Chat</a>
 </div>
 <!-- floating btn end -->
 
