@@ -29,7 +29,7 @@ output+=`<div class="col-sm-6 col-md-4">
 <div class="card shadow-sm">
 
 <div class="ratio ratio-16x9 rounded-top">
-<img src="https://dummyimage.com/300x200" class="img-fluid rounded-top">
+<img data-src="https://dummyimage.com/334x188" data-sizes="auto" class="lazyload img-fluid rounded-top" alt="advertisement">
 </div>
 <p class="my-0 p-2 text-truncate">Advertisement</p>
 
@@ -39,7 +39,7 @@ output+=`<div class="col-sm-6 col-md-4">
 output+=`<div class="col-sm-6 col-md-4">
 <div class="card shadow-sm">
 <div class="img-box position-relative">
-<img src="${dwnld.img}" alt="${dwnld.txt}" class="img-fluid rounded-top" onclick="imgOpen(this)" />
+<img data-src="${dwnld.img}" data-sizes="auto" alt="${dwnld.txt}" class="lazyload img-fluid rounded-top" onclick="imgOpen(this)" />
 <a href="${dwnld.link}" download="${dwnld.txt}" rel="noopener noreferer" class="btn btn-success btn-sm position-absolute right-0 bottom-0 mr-2 mb-2 shake" style="">Download</a>
 </div>
 <p class="my-0 p-2 text-truncate">${dwnld.txt}</p>
@@ -60,7 +60,7 @@ output+=`<div class="col-sm-6 col-md-4">
 <div class="card shadow-sm">
 
 <div class="ratio ratio-16x9 rounded-top">
-<img src="https://dummyimage.com/300x200" class="img-fluid rounded-top">
+<img data-src="https://dummyimage.com/334x188" data-sizes="auto" class="lazyload img-fluid rounded-top" alt="advertisement">
 </div>
 <p class="my-0 p-2 text-truncate">Advertisement</p>
 
@@ -71,7 +71,7 @@ output+=`<div class="col-sm-6 col-md-4">
 <div class="card shadow-sm">
 
 <div class="ratio ratio-16x9 bg-dark rounded-top">
-<iframe src="https://www.youtube.com/embed/${vid.id}?rel=0" title="${vid.txt}" allowfullscreen class="rounded-top"></iframe>
+<iframe data-src="https://www.youtube.com/embed/${vid.id}?rel=0" title="${vid.txt}" allowfullscreen class="lazyload rounded-top"></iframe>
 </div>
 <p class="my-0 p-2 text-truncate">${vid.txt}</p>
 
