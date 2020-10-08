@@ -112,6 +112,15 @@ const date=new Date();
 const year=date.getFullYear();
 _("copyYear").innerText=year;
 
+
+if ('serviceWorker' in navigator){
+  navigator.serviceWorker
+  .register('/sw.js')
+  .then(function(){
+    console.log('Service Worker Registered')
+  })
+}
+
 let deferredPrompt;
 const liteApp = _("liteApp");
 
