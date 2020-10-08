@@ -111,3 +111,25 @@ updateViews();
 const date=new Date();
 const year=date.getFullYear();
 _("copyYear").innerText=year;
+
+let deferredPrompt;
+const liteApp = _("liteApp");
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  liteApp.classList.remove("d-none");
+
+  liteApp.addEventListener('click', (e) => {
+    liteApp.classList.add("d-none");
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then( (choiceResult) =>{
+    if (choiceResult.outcome === 'accepted') {
+    console.log('User accepted the A2HS prompt');
+    } else {
+    console.log('User dismissed the A2HS prompt');
+    }
+    deferredPrompt = null;
+    });
+  });
+});
