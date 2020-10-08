@@ -5,17 +5,10 @@ const vids2=[], dwnlds2=[];
 const vids=vids1.concat(vids2);
 const dwnlds=dwnlds1.concat(dwnlds2);
 
-_("tagLine").innerText=data.tagLine;
-_("tagDesc").innerHTML=data.tagDesc;
-_("contactDesc").innerHTML=data.contactDesc;
-
 document.querySelectorAll(".nav-item").forEach((link)=>{
-
 link.addEventListener("click", ()=>{
 _("navbarBtn").click();
 })
-
-
 })
 
 
