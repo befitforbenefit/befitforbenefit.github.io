@@ -1,5 +1,7 @@
 html {scroll-behavior:smooth}
 
+img.lazyload:not([src]){visibility:hidden}
+
 body {font-family:'Rubik', sans-serif}
 
 .navbar {background-color:#252525 !important}
