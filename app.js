@@ -65,6 +65,7 @@ showVids();
 function imgOpen(el){
 let modal=new bootstrap.Modal(_("imgModal"));
 _("imgModalSrc").src=el.src;
+_("imgModalSrc").alt=el.alt;
 _("imgModalAlt").innerText=el.alt;
 modal.toggle()}
 
