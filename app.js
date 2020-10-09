@@ -42,7 +42,7 @@ fetch("https://raw.githubusercontent.com/befitforbenefit/befitforbenefit.github.
     data.forEach((vid, index)=>{
       let vidAd=index%3;
       if(vidAd==0){
-      output+=`<div class="col-sm-6 col-md-4"><div class="card shadow-sm"><div class="ratio ratio-16x9 rounded-top"><img data-src="https://dummyimage.com/334x188" data-sizes="auto" class="lazyload img-fluid rounded-top" alt="advertisement"></div><p class="my-0 p-2 text-truncate">Advertisement</p></div></div>`
+      output+=`<div class="col-sm-6 col-md-4"><div class="card shadow-sm"><div class="ratio ratio-16x9 rounded-top"></div><p class="my-0 p-2 text-truncate">Advertisement</p></div></div>`
       }
       output+=`<div class="col-sm-6 col-md-4"><div class="card shadow-sm"><div class="ratio ratio-16x9 bg-dark rounded-top"><iframe data-src="https://www.youtube.com/embed/${vid.id}?rel=0" title="${vid.txt}" allowfullscreen class="lazyload rounded-top"></iframe></div><p class="my-0 p-2 text-truncate">${vid.txt}</p></div></div>`
     })
