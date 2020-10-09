@@ -50,7 +50,7 @@ fetch("https://raw.githubusercontent.com/befitforbenefit/befitforbenefit.github.
   })
   .catch((err) => alert(err))
 }
-showVids();
+/* showVids(); */
 
 
 
