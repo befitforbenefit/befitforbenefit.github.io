@@ -18,7 +18,7 @@ fetch("https://befitforbenefit.github.io/lib/dwnlds.json").then((res) => res.jso
       if(dwnldAd==0){
       output+=`<div class="col-sm-6 col-md-4"><div class="card shadow-sm"><div class="ratio ratio-16x9 rounded-top"></div><p class="my-0 p-2 text-truncate">Advertisement</p></div></div>`
       }
-      output+=`<div class="col-sm-6 col-md-4"><div class="card shadow-sm"><div class="img-box position-relative"><img data-src="${dwnld.img}" data-sizes="auto" alt="${dwnld.txt}" class="lazyload img-fluid rounded-top" onclick="imgOpen(this)" /><a href="${dwnld.link}" download="${dwnld.txt}" rel="noopener noreferer" class="btn btn-success btn-sm position-absolute right-0 bottom-0 mr-2 mb-2 shake" style="">Download</a>
+      output+=`<div class="col-sm-6 col-md-4"><div class="card shadow-sm"><div class="img-box position-relative"><img data-src="${dwnld.img}" data-sizes="auto" alt="${dwnld.txt}" class="lazyload img-fluid rounded-top" onclick="imgOpen(this)" /><a href="${dwnld.link}" download="${dwnld.txt}" rel="noopener noreferer" class="btn btn-dark btn-sm position-absolute right-0 bottom-0 mr-2 mb-2" style="">Download</a>
 </div>
 <p class="my-0 p-2 text-truncate">${dwnld.txt}</p>
 </div>

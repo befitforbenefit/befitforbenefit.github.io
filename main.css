@@ -11,13 +11,13 @@ body {font-family:'Rubik', sans-serif}
 .btn-close:hover, .btn-close.active, .btn-close:active {box-shadow:0 0 0 0.25rem rgba(25,135,84,0.25) !important}
 
 
-.form-control:focus {border-color:#198754;
+.form-control:focus {border-color:#252525;
 box-shadow:0 0 0 0.2rem rgba(25,135,84,0.25)}
 
-.form-check-input:focus {border-color:#198754;
+.form-check-input:focus {border-color:#252525;
 box-shadow:0 0 0 0.2rem rgba(25,135,84,0.25)}
 
-.form-check-input:checked {border-color:#198754;background-color:#198754}
+.form-check-input:checked {border-color:#252525;background-color:#252525}
 
 
 .footer{background-color:#252525 !important}
